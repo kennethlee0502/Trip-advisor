@@ -18,7 +18,7 @@ const Header = ({setCoordinates})=>{
     return (<AppBar position = 'static'>
         <Toolbar className = {classes.toolbar}>
         <Typography variant ="h5" className = {classes.title}>
-                Travel Advisor
+                Kenneth's Travel Advisor
         </Typography>
         <Box display = "flex">
         <Typography variant ="h6" className = {classes.title}>
