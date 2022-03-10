@@ -2,7 +2,7 @@ import React from 'react';
 import GoogleMapReact from 'google-map-react';
 import {Paper, Typography, useMediaQuery} from '@material-ui/core'
 import LocationOnOutlinedIcon from "@material-ui/icons/LocationOnOutlined"
-import Rating from '@material-ui/lab'
+import Rating from '@material-ui/lab/Rating'
 
 import useStyle from './styles'
 
@@ -41,7 +41,7 @@ const Map = ({setCoordinates,setBounds,coordinates, places})=>{
                         <img className = {classes.pointer}
                         src = {place.photo ? place.photo.images.large.url : 'https://www.foodserviceandhospitality.com/wp-content/uploads/2016/09/Restaurant-Placeholder-001.jpg'}
                         alt = {place.name}/>
-                        
+                        <Rating size = 'small' value = {Number(place.rating)} readOnly />
                         </Paper>)}
 
                 </div>
